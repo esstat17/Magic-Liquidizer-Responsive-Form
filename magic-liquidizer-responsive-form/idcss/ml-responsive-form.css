@@ -1,0 +1,155 @@
+/*
+ * Plugin Name: Magic Liquidizer Responsive Form
+ * Plugin URI: http://www.innovedesigns.com/
+ * Author: Elvin Deza
+ * Description: A simple and lightweight plugin that converts HTML form to become responsive. After activation, go to Dashboard > Magic Liquidizer Lite > Form.
+* Version: 1.0.3
+* Tags: responsive, fluid
+* Author URI: http://innovedesigns.com/author/esstat17
+*/ 
+
+.ml-clearfix {
+  *zoom: 1;
+}
+
+.ml-clearfix:after,
+.ml-clearfix:before {
+  content: " " !important;
+  display: table !important;
+}
+
+.ml-clearfix:after {
+  clear: both !important;
+}
+
+.ml-clear {
+  clear: both !important;
+}
+
+/*	Responsive Form Import ---------- */
+.ml-form {
+    left: 0 !important;
+    margin-bottom: 1.12765% !important;
+    margin-left: 0 !important;
+    max-width: 100% !important;
+    min-height: 1px !important;
+    min-width: inherit !important;
+    padding-left: 0.5% !important;
+    padding-right: 0.7% !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    right: 0 !important;
+    width: 98.8% !important;
+}
+
+.ml-form * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: auto !important;
+}
+
+form.ml-form > div {
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 10px 0;
+}
+
+.ml-form form > div > fieldset > div > div {
+  margin: 0 0 5px 0;
+}
+
+.ml-form form > div > label,
+.ml-form legend {
+	width: 25%;
+	float: left;
+	padding-right: 10px;
+}
+
+.ml-form form > div > div,
+.ml-form form > div > fieldset > div {
+	width: 75%;
+}
+.ml-form form > div > fieldset label {
+	font-size: 90%;
+}
+.ml-form fieldset {
+	border: 0;
+	padding: 0;
+}
+
+.ml-form input[type="image"] {
+
+}
+
+@media (max-width: 480px) {
+  .ml-form input[type="image"] {
+    width: auto !important; 
+  }
+}
+
+.ml-form label {
+	display: block;
+    left: 0 !important;
+    margin-bottom: 1.12765% !important;
+    margin-left: 0 !important;
+    max-width: 100% !important;
+    min-height: 1px !important;
+    min-width: inherit !important;
+    padding-left: 0.5% !important;
+    padding-right: 0.7% !important;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    right: 0 !important;
+    width: 98.8% !important;
+}
+
+form.ml-form input[type="text"],
+form.ml-form input[type="email"],
+form.ml-form input[type="url"],
+form.ml-form input[type="password"],
+form.ml-form input[type="number"],
+form.ml-form input[type="search"],
+form.ml-form textarea,
+form.ml-form select {
+	display: block;
+	margin-bottom: 1%;
+	padding: 3px;
+	width: 75%;
+}
+
+@media (max-width: 480px) {
+	form.ml-form input[type="text"],
+	form.ml-form input[type="email"],
+    form.ml-form input[type="url"],
+    form.ml-form input[type="password"],
+    form.ml-form input[type="number"],
+    form.ml-form input[type="search"],
+    form.ml-form textarea,
+    form.ml-form select {
+		margin-bottom: 1%;
+		padding: 4px;
+		width: 100% !important;
+    }
+
+	form.ml-form input[type="submit"] {
+    	cursor: pointer;
+    	vertical-align: middle;
+	}
+}
+
+.ml-form form > div {
+	margin: 0 0 15px 0; 
+}
+.ml-form form > div > label,
+.ml-form legend {
+	width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+}
+.ml-form form > div > div,
+.ml-form form > div > fieldset > div {
+	width: 100%;
+    float: none;
+}
